@@ -1,0 +1,7 @@
+streamlit
+joblib
+pandas
+shap
+matplotlib
+numpy
+jellyfish
