@@ -96,7 +96,7 @@ st.set_page_config(page_title="Typosquatting Detector", layout="wide")
 # Load Model
 @st.cache_resource
 def load_model():
-    return joblib.load("best_lightgbm_model_70_30 (1).pkl")
+    return joblib.load("best_lightgbm_model_70_30.pkl")
 
 model = load_model()
 FEATURE_NAMES = ['digit_count', 'hyphen_count', 'entropy', 'homoglyph_count', 'levenshtein_distance', 'damerau_levenshtein_distance', 'jaro_winkler_score', 'suspicious_keywords', 'is_common_tld', 'tld_abuse_score']
