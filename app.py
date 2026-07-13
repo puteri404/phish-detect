@@ -47,7 +47,7 @@ daftar_brand_key = [extract_sld_tld(b)[0] for b in daftar_brand_resmi_full]
 def hitung_entropy(s: str) -> float:
     if not s:
         return 0.0
-    prob = [s.count(c) / len(s) for s in set(s)]
+    prob = [s.count(c) / len(s) for c in set(s)]
     return -sum(p * math.log2(p) for p in prob)
 
 def hitung_homoglyph(sld: str) -> int:
